@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class Counter extends Component {
+    componentDidUpdate(prevProps, prevState){
+        console.log('Prev_Props =>', prevProps);
+        console.log('Prev_State =>', prevState); 
+       // can make an ajax call based on results of the prevPops/prevState     
+    }
     // state = {
     //     count: this.props.counter.value,
     //     //tags: ["tag1","tag2","tag3"]
