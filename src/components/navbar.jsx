@@ -2,7 +2,10 @@
 import React from 'react';
 
 const NavBar = ({ totalCounters }) => {
-    return (
+    
+    console.log('NAVBAR-RENDERED');
+    return (      
+        
         <nav className="navbar navbar-light bg-light">
             <a className="navbar-brand" href="www.google.com">
                 Navbar <span className="badge bagde-pill badge-secondary">{ totalCounters }</span>
