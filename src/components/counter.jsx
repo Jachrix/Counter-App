@@ -6,6 +6,10 @@ class Counter extends Component {
         console.log('Prev_State =>', prevState); 
        // can make an ajax call based on results of the prevPops/prevState     
     }
+    
+    componentWillUnmount(){
+        console.log('COMPONENT WILL UNMOUNT');
+    }
     // state = {
     //     count: this.props.counter.value,
     //     //tags: ["tag1","tag2","tag3"]
